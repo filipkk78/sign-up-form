@@ -23,7 +23,48 @@
             <p>You <i>know</i> you want to.</p>
         </div>
         <form action="">
-
+            <div class="input-space">
+                <h3>Let's do this!</h3>
+                <div class="inputs">
+                    <div class="inputrow">
+                        <div class="inputarea">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="John" required>
+                        </div>
+                        <div class="inputarea">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+                        </div>
+                    </div>
+                    <div class="inputrow">
+                        <div class="inputarea">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" placeholder="abc@def.com" required>
+                        </div>
+                        <div class="inputarea">
+                            <label for="tel">PHONE NUMBER</label>
+                            <input type="tel" name="tel" id="tel" maxlength="15" placeholder="123456789" required>
+                        </div>
+                    </div>
+                    <div class="inputrow">
+                        <div class="inputarea">
+                            <label for="pwd1">PASSWORD</label>
+                            <input type="password" name="pwd1" id="pwd1" pattern="[A-Za-z0-9]+">
+                            <span></span>
+                        </div>
+                        <div class="inputarea">
+                            <label for="pwd2">REPEAT PASSWORD</label>
+                            <input type="password" name="pwd2" id="pwd2" pattern="[A-Za-z0-9]+">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="createacc">
+                <button type="submit">Create account</button>
+                <br><br>
+                <span>Already have an account? <span class="login">Log in</span></span>
+            </div>
         </form>
     </div>
 </body>

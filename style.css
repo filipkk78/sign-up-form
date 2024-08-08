@@ -81,10 +81,65 @@ a {
 .main {
     display: flex;
     flex-direction: column;
+    width: 70%;
+    height: 100vh;
 }
 .description {
-    margin: 6em var(--spacing) 2em;
+    margin: 3em var(--spacing) 3em;
     font-weight: 800;
-    max-width: 66ch;
+    max-width: 55ch;
 }
-
+.input-space {
+    box-shadow: 8px 8px 24px 0px rgba(8, 8, 8, 0.4);
+    padding-left: var(--spacing);
+    padding-bottom: 1.5em;
+}
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4em;
+}
+.createacc {
+    padding-left: var(--spacing);
+    padding-top: 2em;
+}
+button {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 2em;
+    box-shadow: 2px 2px 24px 0px rgba(8, 8, 8, 0.4);
+}
+.login {
+    color: #596D48;
+}
+input {
+    width: 300px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+}
+h3 {
+    padding-top: 0.5em;
+}
+.inputrow {
+    display: flex;
+    gap: 4em;
+}
+label {
+    font-size: 0.7em
+}
+input:focus {
+    outline: none;
+    border-color: blue;
+}
+input[type="password"]:invalid {
+    outline: none;
+    border-color: red;
+}
+#pwd1:invalid + span:before{
+    content: "*Passwords don't match";
+    color: red;
+    font-size: 0.6em;
+}
