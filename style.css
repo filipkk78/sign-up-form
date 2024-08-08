@@ -21,7 +21,14 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
-
-h1 {
-    color: green;
+@font-face {
+    font-family: 'norse bold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: "Roboto", sans-serif;
 }
